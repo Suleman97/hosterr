@@ -30,7 +30,7 @@ export const Banner = () => {
             />
             <img
               className="absolute top-8 left-6 w-[450px] rotat-four"
-              src="/hero-img.png"
+              src="/hero-img1.webp"
               alt="purple"
             />
           </div>
@@ -97,7 +97,7 @@ export const Banner = () => {
             />
             <img
               className="absolute top-8 left-6 w-[450px] rotat-four"
-              src="/hero-img.png"
+              src="/hero-img1.webp"
               alt="purple"
             />
           </div>
