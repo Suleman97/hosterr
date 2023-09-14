@@ -1,5 +1,4 @@
-import { Animate, Button, Input, Zoom } from "~/components";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { Animate, Button, Input } from "~/components";
 import * as yup from "yup";
 import { Form, Formik } from "formik";
 
@@ -12,13 +11,13 @@ export const Banner = () => {
     <section className=" font-body bg-right bg-[#f9f4e8] pt-[50px] md:py-[50px] px-[20px]">
       <div className="max-w-[1200px] xl:min-h-[65vh] 2xl:min-h-[70vh] m-auto flex flex-col 2xl:items-center xl:flex-row gap-[20px] xl:gap-[100px]">
         <div className="flex justify-center xl:hidden">
-          <Zoom>
+          <div className="infinite-animate-image">
             <img
               src="/banner-img.png"
               alt="Book"
               className="w-[290px] md:w-[550px]"
             />
-          </Zoom>
+          </div>
         </div>
         <div className="font-body flex flex-col gap-[10px] justify-center">
           <Animate>
@@ -62,11 +61,9 @@ export const Banner = () => {
           </div>
         </div>
         <div className="hidden xl:flex justify-center">
-          <ParallaxProvider scrollAxis="vertical">
-            <Parallax speed={20}>
-              <img src="/banner-img.png" alt="Book" className="md:w-[650px]" />
-            </Parallax>
-          </ParallaxProvider>
+          <div className="infinite-animate-image">
+            <img src="/banner-img.png" alt="Book" className="md:w-[650px]" />
+          </div>
         </div>
       </div>
       <div className="max-w-[1200px] m-auto flex flex-col md:flex-row gap-[20px] justify-between pt-[60px]">
