@@ -10,15 +10,32 @@ export const Banner = () => {
   return (
     <section className=" font-body bg-right bg-[#f9f4e8] pt-[50px] md:py-[50px] px-[20px]">
       <div className="max-w-[1200px] xl:min-h-[65vh] 2xl:min-h-[70vh] m-auto flex flex-col 2xl:items-center xl:flex-row gap-[20px] xl:gap-[100px]">
-        <div className="flex justify-center xl:hidden">
-          <div className="infinite-animate-image">
+        <div className="xl:hidden w-[40%] min-h-[20vh] md:min-h-[35vh] m-auto">
+          <div className="relative">
             <img
-              src="/banner-img.png"
-              alt="Book"
-              className="w-[290px] md:w-[550px]"
+              className="absolute top-0 left-0 animate-image-one rotat-one w-[420px]"
+              src="/svg/blue.svg"
+              alt="blue"
+            />
+
+            <img
+              className="absolute top-4 left-4 animate-image-two rotat-two w-[420px]"
+              src="/svg/pink.svg"
+              alt="pink"
+            />
+            <img
+              className="absolute top-8 left-8 rotat-three animate-image-three w-[430px]"
+              src="/svg/purple.svg"
+              alt="purple"
+            />
+            <img
+              className="absolute top-8 left-6 w-[450px] rotat-four"
+              src="/hero-img.png"
+              alt="purple"
             />
           </div>
         </div>
+
         <div className="font-body flex flex-col gap-[10px] justify-center">
           <Animate>
             <h1 className="text-[#14213D] text-[44px] md:text-[62px] font-[700] xl:max-w-[650px] font-heading md:leading-[1.125]">
@@ -60,9 +77,29 @@ export const Banner = () => {
             </p>
           </div>
         </div>
-        <div className="hidden xl:flex justify-center">
-          <div className="infinite-animate-image">
-            <img src="/banner-img.png" alt="Book" className="md:w-[650px]" />
+        <div className="hidden xl:block w-[40%] min-h-[50vh]">
+          <div className="relative">
+            <img
+              className="absolute top-0 left-0 animate-image-one rotat-one w-[420px]"
+              src="/svg/blue.svg"
+              alt="blue"
+            />
+
+            <img
+              className="absolute top-4 left-4 animate-image-two rotat-two w-[420px]"
+              src="/svg/pink.svg"
+              alt="pink"
+            />
+            <img
+              className="absolute top-8 left-8 rotat-three animate-image-three w-[430px]"
+              src="/svg/purple.svg"
+              alt="purple"
+            />
+            <img
+              className="absolute top-8 left-6 w-[450px] rotat-four"
+              src="/hero-img.png"
+              alt="purple"
+            />
           </div>
         </div>
       </div>
