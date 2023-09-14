@@ -1,6 +1,8 @@
 import { Fragment, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { Dialog, Transition } from "@headlessui/react";
+import Link from "next/link";
+import { Button } from ".";
 
 /**
  * Drawer component that opens on user click.
@@ -68,7 +70,18 @@ function Drawer({ heading, open, onClose, openFrom = "right", children }) {
                       <AiOutlineClose />
                     </button>
                   </header>
-                  <div className="font-body">{children}</div>
+                  <div className="font-body">
+                    {children}
+                    <div className="px-[20px] flex justify-center items-center flex-col gap-[12px] mt-[12px]">
+                      <Link
+                        href="/"
+                        className="text-[20px] md:px-[16px] md:py-[10px] text-[#525252] font-[500] cursor-pointer font-body transition-all duration-500 hover:font-[600]"
+                      >
+                        Sign in
+                      </Link>
+                      <Button />
+                    </div>
+                  </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
